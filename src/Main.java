@@ -6,14 +6,20 @@ import java.util.Scanner;
 //        String input = scanner.nextLine();
 //        System.out.println("Reversed string is :  " + ReverseString.reverseString(input));
 
-          System.out.println("Enter a sentence: ");
+//          System.out.println("Enter a sentence: ");
+//          Scanner input = new Scanner(System.in);
+//          String sentence = input.nextLine();
+//          Map<String, Integer> resultMap = WordCount.getWordCount(sentence);
+//          System.out.println("The words in the sentence are: ");
+//          for (Map.Entry<String, Integer> entry : resultMap.entrySet()) {
+//              System.out.println(entry.getKey() + ": " + entry.getValue());
+//          }
+
+          System.out.println("Enter the string to check for palindrome: ");
           Scanner input = new Scanner(System.in);
-          String sentence = input.nextLine();
-          Map<String, Integer> resultMap = WordCount.getWordCount(sentence);
-          System.out.println("The words in the sentence are: ");
-          for (Map.Entry<String, Integer> entry : resultMap.entrySet()) {
-              System.out.println(entry.getKey() + ": " + entry.getValue());
-          }
+          String inputString = input.nextLine();
+          System.out.println("Input string is Palindrome: " + Palindrome.isPalindrome(inputString));
+
 
 
     }
