@@ -57,7 +57,9 @@ import java.util.Scanner;
           for(int i = 0; i < len; i++) {
               arr[i] = sc.nextInt();
           }
-          System.out.println("Second highest number of the array is : " + SecondHighestNumber.getSecondHighestNumber(arr));
+//          System.out.println("Second highest number of the array is : " + SecondHighestNumber.getSecondHighestNumber(arr));
+
+          System.out.println("Second highest number using java streams is : " + SecondHighestNumber.getSecondHighestNumWithStreams(arr));
 
 
 
