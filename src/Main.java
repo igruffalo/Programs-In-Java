@@ -49,19 +49,29 @@ import java.util.Scanner;
 //          Set<Character> set = DuplicateChars.duplicates(input);
 //          System.out.println("The duplicate characters are: " + set);
 
-          System.out.println("Enter the length of array: ");
-          Scanner sc = new Scanner(System.in);
-          int len = sc.nextInt();
-          int[] arr = new int[len];
-          System.out.println("Enter array elements: ");
-          for(int i = 0; i < len; i++) {
-              arr[i] = sc.nextInt();
-          }
+//          System.out.println("Enter the length of array: ");
+//          Scanner sc = new Scanner(System.in);
+//          int len = sc.nextInt();
+//          int[] arr = new int[len];
+//          System.out.println("Enter array elements: ");
+//          for(int i = 0; i < len; i++) {
+//              arr[i] = sc.nextInt();
+//          }
 //          System.out.println("Second highest number of the array is : " + SecondHighestNumber.getSecondHighestNumber(arr));
 
-          System.out.println("Second highest number using java streams is : " + SecondHighestNumber.getSecondHighestNumWithStreams(arr));
+//          System.out.println("Second highest number using java streams is : " + SecondHighestNumber.getSecondHighestNumWithStreams(arr));
 
-
+          System.out.println("Enter target: ");
+          Scanner sc = new Scanner(System.in);
+          int target = sc.nextInt();
+          System.out.println("Enter the number of elements in the array: ");
+          int n = sc.nextInt();
+          int[] arr = new int[n];
+          System.out.println("Enter the elements in the array: ");
+          for (int i = 0; i < n; i++) {
+              arr[i] = sc.nextInt();
+          }
+          System.out.println("Two Sum result is : " + Arrays.toString(TwoSum.twoSum(arr, target)));
 
 
 
