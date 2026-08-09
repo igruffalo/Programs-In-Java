@@ -15,10 +15,16 @@ import java.util.Scanner;
 //              System.out.println(entry.getKey() + ": " + entry.getValue());
 //          }
 
-          System.out.println("Enter the string to check for palindrome: ");
-          Scanner input = new Scanner(System.in);
-          String inputString = input.nextLine();
-          System.out.println("Input string is Palindrome: " + Palindrome.isPalindrome(inputString));
+//          System.out.println("Enter the string to check for palindrome: ");
+//          Scanner input = new Scanner(System.in);
+//          String inputString = input.nextLine();
+//          System.out.println("Input string is Palindrome: " + Palindrome.isPalindrome(inputString));
+
+          System.out.println("Enter the number for iterative fibonacci series: ");
+          Scanner sc = new Scanner(System.in);
+          int n = sc.nextInt();
+          System.out.println("The fibonacci series are: ");
+          Fibonacci.itrFibonacci(n);
 
 
 
