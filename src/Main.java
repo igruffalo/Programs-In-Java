@@ -26,13 +26,23 @@ import java.util.Scanner;
 //          System.out.println("The fibonacci series are: ");
 //          Fibonacci.itrFibonacci(n);
 
-          System.out.println("Enter the number for recursive fibonacci series: ");
-          Scanner input = new Scanner(System.in);
-          int num = input.nextInt();
-          System.out.println("The fibonacci series are: ");
-          for(int i = 0; i < num; i++) {
-              System.out.print(Fibonacci.recFibonacci(i) + " ");
+//          System.out.println("Enter the number for recursive fibonacci series: ");
+//          Scanner input = new Scanner(System.in);
+//          int num = input.nextInt();
+//          System.out.println("The fibonacci series are: ");
+//          for(int i = 0; i < num; i++) {
+//              System.out.print(Fibonacci.recFibonacci(i) + " ");
+//          }
+
+          System.out.println("Enter the string to find duplicate and number of duplicate characters: ");
+          Scanner sc = new Scanner(System.in);
+          String input = sc.nextLine();
+          Map<Character, Integer> map = DuplicateChars.duplicateChars(input);
+          System.out.println("The duplicate characters are: ");
+          for(Map.Entry<Character,Integer> entry : map.entrySet()) {
+              System.out.println(entry.getKey() + ": " + entry.getValue());
           }
+
 
 
 
