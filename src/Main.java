@@ -43,11 +43,22 @@ import java.util.Scanner;
 //              System.out.println(entry.getKey() + ": " + entry.getValue());
 //          }
 
-          System.out.println("Enter the string to find duplicate characters: ");
+//          System.out.println("Enter the string to find duplicate characters: ");
+//          Scanner sc = new Scanner(System.in);
+//          String input = sc.nextLine();
+//          Set<Character> set = DuplicateChars.duplicates(input);
+//          System.out.println("The duplicate characters are: " + set);
+
+          System.out.println("Enter the length of array: ");
           Scanner sc = new Scanner(System.in);
-          String input = sc.nextLine();
-          Set<Character> set = DuplicateChars.duplicates(input);
-          System.out.println("The duplicate characters are: " + set);
+          int len = sc.nextInt();
+          int[] arr = new int[len];
+          System.out.println("Enter array elements: ");
+          for(int i = 0; i < len; i++) {
+              arr[i] = sc.nextInt();
+          }
+          System.out.println("Second highest number of the array is : " + SecondHighestNumber.getSecondHighestNumber(arr));
+
 
 
 
