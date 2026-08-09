@@ -20,11 +20,20 @@ import java.util.Scanner;
 //          String inputString = input.nextLine();
 //          System.out.println("Input string is Palindrome: " + Palindrome.isPalindrome(inputString));
 
-          System.out.println("Enter the number for iterative fibonacci series: ");
-          Scanner sc = new Scanner(System.in);
-          int n = sc.nextInt();
+//          System.out.println("Enter the number for iterative fibonacci series: ");
+//          Scanner sc = new Scanner(System.in);
+//          int n = sc.nextInt();
+//          System.out.println("The fibonacci series are: ");
+//          Fibonacci.itrFibonacci(n);
+
+          System.out.println("Enter the number for recursive fibonacci series: ");
+          Scanner input = new Scanner(System.in);
+          int num = input.nextInt();
           System.out.println("The fibonacci series are: ");
-          Fibonacci.itrFibonacci(n);
+          for(int i = 0; i < num; i++) {
+              System.out.print(Fibonacci.recFibonacci(i) + " ");
+          }
+
 
 
 

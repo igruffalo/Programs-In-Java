@@ -10,4 +10,11 @@ public class Fibonacci {
             secondTerm = nextTerm;
         }
     }
+
+    public static int recFibonacci(int i) {
+        if(i <= 1) {
+            return i;
+        }
+        return recFibonacci(i-1) + recFibonacci(i-2);
+    }
 }
