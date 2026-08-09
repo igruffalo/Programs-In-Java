@@ -34,14 +34,21 @@ import java.util.Scanner;
 //              System.out.print(Fibonacci.recFibonacci(i) + " ");
 //          }
 
-          System.out.println("Enter the string to find duplicate and number of duplicate characters: ");
+//          System.out.println("Enter the string to find duplicate and number of duplicate characters: ");
+//          Scanner sc = new Scanner(System.in);
+//          String input = sc.nextLine();
+//          Map<Character, Integer> map = DuplicateChars.duplicateChars(input);
+//          System.out.println("The duplicate characters are: ");
+//          for(Map.Entry<Character,Integer> entry : map.entrySet()) {
+//              System.out.println(entry.getKey() + ": " + entry.getValue());
+//          }
+
+          System.out.println("Enter the string to find duplicate characters: ");
           Scanner sc = new Scanner(System.in);
           String input = sc.nextLine();
-          Map<Character, Integer> map = DuplicateChars.duplicateChars(input);
-          System.out.println("The duplicate characters are: ");
-          for(Map.Entry<Character,Integer> entry : map.entrySet()) {
-              System.out.println(entry.getKey() + ": " + entry.getValue());
-          }
+          Set<Character> set = DuplicateChars.duplicates(input);
+          System.out.println("The duplicate characters are: " + set);
+
 
 
 

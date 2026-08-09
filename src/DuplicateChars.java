@@ -1,5 +1,7 @@
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 public class DuplicateChars {
     public static Map<Character, Integer> duplicateChars(String str) {
@@ -15,5 +17,17 @@ public class DuplicateChars {
             }
         }
         return duplicateMap;
+    }
+
+    public static Set<Character> duplicates(String input) {
+        Set<Character> set = new HashSet<>();
+        Set<Character> seen = new HashSet<>();
+        char[] arr = input.toCharArray();
+        for (char c : arr) {
+            if(!seen.add(c)) {
+                set.add(c);
+            }
+        }
+        return set;
     }
 }
