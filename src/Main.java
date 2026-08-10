@@ -61,17 +61,28 @@ import java.util.Scanner;
 
 //          System.out.println("Second highest number using java streams is : " + SecondHighestNumber.getSecondHighestNumWithStreams(arr));
 
-          System.out.println("Enter target: ");
-          Scanner sc = new Scanner(System.in);
-          int target = sc.nextInt();
-          System.out.println("Enter the number of elements in the array: ");
-          int n = sc.nextInt();
-          int[] arr = new int[n];
-          System.out.println("Enter the elements in the array: ");
-          for (int i = 0; i < n; i++) {
-              arr[i] = sc.nextInt();
-          }
-          System.out.println("Two Sum result is : " + Arrays.toString(TwoSum.twoSum(arr, target)));
+//          System.out.println("Enter target: ");
+//          Scanner sc = new Scanner(System.in);
+//          int target = sc.nextInt();
+//          System.out.println("Enter the number of elements in the array: ");
+//          int n = sc.nextInt();
+//          int[] arr = new int[n];
+//          System.out.println("Enter the elements in the array: ");
+//          for (int i = 0; i < n; i++) {
+//              arr[i] = sc.nextInt();
+//          }
+//          System.out.println("Two Sum result is : " + Arrays.toString(TwoSum.twoSum(arr, target)));
+
+            Map<String,Integer> map = new HashMap<>();
+            map.put("four", 4);
+            map.put("one", 1);
+            map.put("three", 3);
+            map.put("two", 2);
+
+            System.out.println("Sorted map by value is : " + SortMap.sortByValue(map));
+
+
+
 
 
 
