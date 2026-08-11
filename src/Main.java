@@ -73,13 +73,17 @@ import java.util.Scanner;
 //          }
 //          System.out.println("Two Sum result is : " + Arrays.toString(TwoSum.twoSum(arr, target)));
 
-            Map<String,Integer> map = new HashMap<>();
-            map.put("four", 4);
-            map.put("one", 1);
-            map.put("three", 3);
-            map.put("two", 2);
+//            Map<String,Integer> map = new HashMap<>();
+//            map.put("four", 4);
+//            map.put("one", 1);
+//            map.put("three", 3);
+//            map.put("two", 2);
+//
+//            System.out.println("Sorted map by value is : " + SortMap.sortByValue(map));
 
-            System.out.println("Sorted map by value is : " + SortMap.sortByValue(map));
+            System.out.println("Enter comma separated Strings : ");
+            String str =  new Scanner(System.in).nextLine();
+            System.out.println("Concatenated sorted string is : " + ConcatStr.getSortAndConcatStr(str));
 
 
 
